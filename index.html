@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+  </head>
+  <body>
+    <div class="container-1">
+      <h2>Challange 1 : your age in Days</h2>
+
+      <div class="my">
+        <div>
+          <button class="btn btn-primary" type="button" name="button" onclick="formula()">Click me</button>
+        </div>
+        <div>
+          <button class="btn btn-danger" type="button" name="button2" onclick=reset()>Reset</button>
+        </div>
+
+      </div>
+      <div class="my">
+        <div id="bitch">
+
+
+        </div>
+
+      </div>
+    </div>
+    <div class="contanier-2">
+      <h2>Challange 2 :CAt generator</h2>
+      <button type="button" class="btn btn-success" name="button" onclick="generate()" id="cat-btn">Create</button>
+
+      <div class="my2"id="flex-cat">
+
+
+      </div>
+
+    </div>
+    <div class="rpsDiv">
+      <h2>Challenge 3</h2>
+      <div class="rps-box" id="rps">
+        <img id="rock" src="https://www.rd-textures.com/wp-content/uploads/2016/12/RG-02_kugel0013-300x300.png" alt="" height="100px" width="100px" onclick="rpsGame(this)">
+        <img id="pap" src="https://i2.wp.com/www.jeffreythompson.org/blog/wp-content/uploads/2012/01/NotebookPaperAnimation-JohnnyKellyMattCooper.gif?resize=500%2C375" alt="" height="100px" width="100px" onclick="rpsGame(this)">
+        <img  id="scissor"src="https://images.squarespace-cdn.com/content/v1/51486963e4b07ce92120ace4/1493784673647-CJLHGMRLUS3FQ35IQQIW/ke17ZwdGBToddI8pDm48kIu1QHqWqYcqSXGQukjVMYR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0k5fwC0WRNFJBIXiBeNI5fIG4lvOJgCZoc7R0Cd0Owykpqjz4OyDzVxk_JLua2qGvQ/20170501_0151_4x4.jpg?format=300w" height="100px" width="100px" alt=""
+        onclick="rpsGame(this)">
+
+      </div>
+
+    </div>
+    <div class="cont4">
+      <h2> Challange 4: change the color of all button</h2>
+      <div class="pickColor">
+        <form class="" action="" method="">
+          <select class="" name="backdrop" onchange="hey(this)">
+            <option value="random">Ranodm</option>
+            <option value="red">rred</option>
+            <option value="green">green</option>
+            <option value="reset">reset</option>
+          </select>
+        </form>
+        <button type="button" class="btn btn-primary" name="button">wee</button>
+        <button type="button" class="btn btn-danger" name="button1">google</button>
+        <button type="button" class="btn btn-warning" name="button2">yahoo</button>
+        <button type="button" class="btn btn-success" name="button3">yandex</button>
+
+      </div>
+
+    </div>
+    <div class="cont5">
+      <h2>Challange5 Black jack</h2>
+      <h3><span id='blackjack-result'>Let's Play</span></h3>
+      <div class="row-1">
+        <div class="your-box">
+          <h2>you : <span id="your-blackjack-result">0</span></h2>
+        </div>
+        <div class="dealer-box">
+          <h2>Dealer: <span>0</span></h2>
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="">
+            <button type="button"  class="btn-lg btn-primary mr-2" id="hit-button">Hit</button>
+            <button type="button"  class="btn-lg btn-warning mr-2" id='stand-button'>Stand</button>
+            <button type="button" class='btn-lg btn-danger ' id='deal-button'>Deal</button>
+        </div>
+      </div>
+      <div class="row-3">
+        <table>
+          <tr>
+            <th>Wins</th>
+            <th>Loses</th>
+            <th>Draws</th>
+          </tr>
+          <tr>
+            <th><span id="wins">0</span></th>
+            <th><span id="loses">0</span></th>
+            <th><span id="draws">0</span></th>
+          </tr>
+        </table>
+
+      </div>
+
+    </div>
+
+    <script src="static/js/index.js"></script>
+  </body>
+</html>
